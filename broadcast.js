@@ -26,6 +26,8 @@ client.on('message', async message => {
                 let bcEmbed = new Discord.RichEmbed()
           .setAuthor(`${message.author.username}#${message.author.discriminator}`,message.author.avatarURL)
           .setThumbnail(message.guild.iconURL || message.guild.avatarURL)
+          .setColor('#000000')
+          .setColor('#36393e')
           .addField('- Sender:',message.author)
           .addField('- Server:',message.guild.name)
           .addField('- Message:',`\`\`\`${args}\`\`\``);
@@ -45,4 +47,6 @@ client.on('message', async message => {
     });
     }
 });
+
+
 client.login(process.env.Fadi);
